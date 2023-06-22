@@ -4,8 +4,7 @@ on:
   push:
     branches: [ "dev" ]
   pull_request:
-    types: 
-    	-opened
+    types: -opened
 
 jobs:
   build:
@@ -37,5 +36,5 @@ jobs:
       run: echo "${{toJSON(github)}}"
     - name: Output env context object
       run: echo "${{toJSON(env)}}"
-	- name: Output github event
+    - name: Output github event
       run: echo "${{toJSON(github.event_name)}}"
