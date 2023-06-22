@@ -32,3 +32,5 @@ jobs:
        password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: Output github context object
       run: echo "${{toJSON(github)}}"
+    - name: Output env context object
+      run: echo "${{toJSON(env)}}"
