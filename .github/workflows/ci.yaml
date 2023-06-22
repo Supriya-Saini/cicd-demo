@@ -38,4 +38,4 @@ jobs:
     - name: Output env context object
       run: echo "${{toJSON(env)}}"
 	- name: Output github event
-      run: echo "${{toJSON(github.event)}}"
+      run: echo "${{toJSON(github.event_name)}}"
