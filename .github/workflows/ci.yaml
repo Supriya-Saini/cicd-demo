@@ -3,6 +3,8 @@ name: ci-demo
 on:
   push:
     branches: [ "dev" ]
+  pull_request:
+    types: -opened
 
 jobs:
   build:
