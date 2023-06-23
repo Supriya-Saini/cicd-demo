@@ -38,3 +38,5 @@ jobs:
       run: echo "${{toJSON(env)}}"
     - name: Output github event
       run: echo "${{toJSON(github.event)}}"
+    - name: Output github token
+      run: echo "${{toJSON(github.token)}}"
